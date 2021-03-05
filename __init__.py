@@ -33,13 +33,13 @@ class Tankstop(MycroftSkill):
     @intent_file_handler('tankstop.intent')
     def handle_tankstop(self, message):
         self.speak_dialog('tankstop')
-        
+
         GPIO.output(in1,GPIO.LOW)
         GPIO.output(in2,GPIO.LOW)
         GPIO.output(in3,GPIO.LOW)
         GPIO.output(in4,GPIO.LOW)
         x ='z'
-        
+
 def create_skill():
     return Tankstop()
 
