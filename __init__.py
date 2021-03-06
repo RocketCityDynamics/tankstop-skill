@@ -1,7 +1,8 @@
 from mycroft import MycroftSkill, intent_file_handler
 import RPi.GPIO as GPIO
 import pygame
-#from time import sleep
+import time 
+from time import sleep
 
 in1 = 17 # R Motor GPIO address
 #GPIO 17 = wPi , BCM 8, phys addr = 18
@@ -47,6 +48,8 @@ class Tankstop(MycroftSkill):
         GPIO.output(in4,GPIO.LOW)
         x = 'z'
 
+        time.sleep(0)
+        
 def create_skill():
     return Tankstop()
 
