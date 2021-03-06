@@ -1,5 +1,5 @@
 from mycroft import MycroftSkill, intent_file_handler
-import GPIO as GPIO
+import RPi.GPIO as GPIO
 import pygame
 #from time import sleep
 
