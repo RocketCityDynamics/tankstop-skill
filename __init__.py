@@ -39,16 +39,7 @@ class Tankstop(MycroftSkill):
         GPIO.output(in2,GPIO.LOW)
         GPIO.output(in3,GPIO.LOW)
         GPIO.output(in4,GPIO.LOW)
-        x ='z'
-
-        GPIO.output(in1,GPIO.LOW)
-        GPIO.output(in2,GPIO.LOW)
-        GPIO.output(in3,GPIO.LOW)
-        GPIO.output(in4,GPIO.LOW)
-        x = 'z'
-
-        time.sleep(0)
-        
+             
 def create_skill():
     return Tankstop()
 
